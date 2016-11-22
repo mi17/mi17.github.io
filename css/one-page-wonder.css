@@ -71,6 +71,11 @@ a:hover {
     max-width: 750px;
 }
 
+.img-responsive {
+    max-width: 500px;
+    height: auto;
+}
+
 @media(max-width:1200px) {
     .headline h1 {
         font-size: 140px;
