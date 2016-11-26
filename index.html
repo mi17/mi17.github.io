@@ -126,6 +126,20 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
+    <script>
+        menuBug();
+        $(window).resize(function() {
+            menuBug();
+        });
+        function menuBug() {
+            if ($(document).width() <= 750) {
+                $('.navbar-collapse').on('click', 'li', function (e) {
+                    $('button.navbar-toggle').click();
+                })
+            }
+        }
+    </script>
+
 </body>
 
 </html>
